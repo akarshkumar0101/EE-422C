@@ -1,0 +1,11 @@
+// Copy-paste this file at the top of every file you turn in.
+/*
+ * EE422C Project 1 submission by
+ * Replace <...> with your actual data.
+ * <Student Name>
+ * <Student EID>
+ * <5-digit Unique No.>
+ * Fall 2019
+ * Slip days used: 
+ */
+
