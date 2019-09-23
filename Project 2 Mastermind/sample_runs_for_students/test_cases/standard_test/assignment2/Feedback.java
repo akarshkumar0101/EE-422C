@@ -1,18 +1,8 @@
-/*
- * EE422C Project 2 (Mastermind) submission by
- * Akarsh Kumar
- * ak39969
- * Slip days used: 0
- * Fall 2019
- */
 package assignment2;
 
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Holds a guess from the user, and the associated feedback from it.
- */
 public class Feedback {
 
     private final String secretCode;
@@ -21,11 +11,7 @@ public class Feedback {
     private final int black;
     private final int white;
 
-    /**
-     * Creates feedback given the secret code and the guess.
-     * @param secretCodeStr
-     * @param validGuessStr
-     */
+
     public Feedback(String secretCodeStr, String validGuessStr){
         this.secretCode = secretCodeStr;
         this.validGuess = validGuessStr;
@@ -70,21 +56,13 @@ public class Feedback {
         this.white = white;
     }
 
-    /**
-     * @return the number of black pegs
-     */
+
     public int numBlack(){
         return black;
     }
-    /**
-     * @return the number of white pegs
-     */
     public int numWhite(){
         return white;
     }
-    /**
-     * @return the valid guess fed from which the feedback was created.
-     */
     public String getValidGuess(){
         return validGuess;
     }

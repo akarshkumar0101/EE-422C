@@ -1,31 +1,15 @@
-/*
- * EE422C Project 2 (Mastermind) submission by
- * Akarsh Kumar
- * ak39969
- * Slip days used: 0
- * Fall 2019
- */
 package assignment2;
 
 import java.util.*;
 
-/**
- * An implementation of the GameUI using the console for input/output (no GUI)
- */
 public class ConsoleGameUI implements GameUI {
 
-    /**
-     * The scanner used for all ConsoleGameUIs.
-     */
     public static final Scanner inputScanner;
 
     static {
         inputScanner = new Scanner(System.in);
     }
 
-    /**
-     * Defined constants to use in this implementation.
-     */
     private static final String YES_STR = "Y", NO_STR = "N", HISTORY_STR = "HISTORY";
 
 

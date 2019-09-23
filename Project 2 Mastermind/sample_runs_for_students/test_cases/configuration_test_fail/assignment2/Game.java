@@ -1,19 +1,9 @@
-/*
- * EE422C Project 2 (Mastermind) submission by
- * Akarsh Kumar
- * ak39969
- * Slip days used: 0
- * Fall 2019
- */
 package assignment2;
 
 import java.util.*;
 
 public class Game {
 
-    /**
-     * the set of all allowed colors
-     */
     private static Set<String> allowedColors;
 
     static{
@@ -31,29 +21,15 @@ public class Game {
 
     private final List<Feedback> feedbackHistory;
 
-    /**
-     * Create a new game.
-     * @param testingMode
-     * @param gameUI
-     */
     public Game(boolean testingMode, GameUI gameUI){
         this.testingMode = testingMode;
         this.gameUI = gameUI;
 
         feedbackHistory = new ArrayList<>(GameConfiguration.guessNumber);
     }
-
-    /**
-     * Resets the game to a brand new game.
-     */
     public void resetGame(){
         resetGame(GameConfiguration.guessNumber);
     }
-
-    /**
-     * Init a new game with a numGuesses
-     * @param numGuesses
-     */
     private void resetGame(int numGuesses){
         numGuessesLeft = numGuesses;
         secretCode = SecretCodeGenerator.getInstance().getNewSecretCode();
@@ -64,9 +40,6 @@ public class Game {
         }
     }
 
-    /**
-     * Run the actual game
-     */
     public void runGame(){
         boolean won = false;
         while(!won && numGuessesLeft>0) {
@@ -112,18 +85,9 @@ public class Game {
         return true;
     }
 
-    /**
-     * Returns the feedback history.
-     * @return
-     */
     public List<Feedback> getFeedbackHistory(){
         return feedbackHistory;
     }
-
-    /**
-     * Number of guesses left in this game.
-     * @return
-     */
     public int getNumGuessesLeft(){
         return numGuessesLeft;
     }

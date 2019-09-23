@@ -7,3 +7,11 @@
  * Spring 2019
  */
 package assignment2;
+
+/*
+ * EE422C Project 2 (Mastermind) submission by
+ * Akarsh Kumar
+ * ak39969
+ * Slip days used: 0
+ * Fall 2019
+ */

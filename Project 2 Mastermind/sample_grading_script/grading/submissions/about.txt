@@ -1,0 +1,2 @@
+These are only sample submissions.
+You can see each type of error in the brief results.csv file generated when you run the script.
